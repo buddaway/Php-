@@ -1,0 +1,24 @@
+<?php /* Template Name: CustomPageT1 */ ?>
+
+<form action="" method="post">
+<input type="text" name="search">
+<input type="submit" name="submit" value="Search">
+</form>
+
+
+<?php
+$server = 'localhost';
+$user = '';
+$password = '';
+$dbname = '';
+
+//Place actual values in the variables above
+
+$mysqli = new mysqli("localhost",$user,$password,$dbname);
+
+// Check connection
+if ($mysqli -> connect_errno) {
+  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+  exit();
+}
+?>
